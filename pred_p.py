@@ -21,8 +21,8 @@ def validate_tel_number(tel__number):
             print(f"Номер телефона {tel__number} является корректным.")
         else:
             print(f"Номер телефона {tel__number} некорректный.")
-    except Exception as e: #ошибка запишется в переменную е 
-        print(f"Ошибка при проверке номера телефона: {e}")
+    except: #ошибка
+        print("Ошибка при проверке номера телефона")
 
 # вводим телефончик 
 vvod_pol = input("Введите номер телефона: ")
