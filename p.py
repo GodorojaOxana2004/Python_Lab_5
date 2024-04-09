@@ -56,7 +56,7 @@ def output_data():
         lines = file.readlines()
         total_children = 0
         for line in lines:
-            data = line.strip().split("\t")
+            data = line.strip().split("\t") #убераю разделяю по табуляции(\t) и убираю лишнии пробелы
             print("Сотрудник: {} {}, детей: {}".format(data[0], data[1], data[3]))
             total_children += int(data[3])
         print("Общее количество детей:" + str(total_children))
